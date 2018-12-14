@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Builder</title>
+<style>
+font
+{
+color:1a1a1a;
+}
+input{
+background-color:#e6e6e6;
+}
+button
+{
+font-weight:bold;
+cursor: pointer;
+background-color:#2E3268;
+border:none;
+color:989479;
+}
+delentry
+{
+cursor: pointer;
+font-weight: bold;
+color: #2E3268;
+float:right;
+}
+
+back
+{
+cursor: pointer;
+float: left;
+font-weight: bold;
+padding:5px;
+}
+
+editentry
+{
+cursor: pointer;
+font-weight: bold;
+color: #2E3268;
+float:right;
+}
+
+li
+{
+padding-bottom:5px;
+overflow:auto;
+border-bottom:1px solid #2E3268;
+}
+</style>
+</head>
+<body bgcolor=#989479>
+<div id="main" style="width: 60%; height:100%; float:left; border:none; border-right:3px solid #2E3268;">
+<div id="button">
+<br><br><br><br><br><br><br><center><button style="height:50%; width:100%;"><font size=6>Click to add a product</font></button></div>
+<div id="click" style="display:none">
+<back onclick=back()> &#8592; BACK</back>
+<center><h1><b><u>Product Details<br><br></u></b></h1>
+Name <center><input id="name" type="text" placeholder="Enter Product Name" style="height:50; width:100%"><br><br>
+Price <center><input id="price" type="text" placeholder="Enter Product Cost" style="height:50; width:100%"><br><br>
+Quantity <center><input id="quan" type="text" placeholder="Enter Product Quantity" style="height:50; width:100%"><br><br>
+Description <center><input id="desc" type="text" placeholder="Enter Product Description" style="height:50; width:100%"><br><br><center>
+<button id="submit" style="height:10%; width:100%; "><font size=4>Submit</font>
+</button>
+</div>
+</div>
+</font>
+<div id="data" style="width: 37%; height:100%; float:right;">
+<button id="clear" style=" color:989479; border:none; width:80%; height:5%; visibility:hidden;">Clear all
+</button>
+<button id="logout" style="float:right; padding:1px; border:.5px groove black; font-weight:normal;">Logout
+</button><br>
+<font size=5>
+<ul id="list" type=disc ></ul>
+</font>
+</div>
+<script src="product.js"></script>
+</body>
+</html>	

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Cart</title>
+<style>
+body
+{
+background-color:#BCD2C8;
+color:#484452;
+font-size:20px;
+}
+li
+{
+border-bottom:2px solid #A36167;
+padding:12px;
+}
+button
+{
+border:1px solid #A36167;
+color:#e6e6e6;
+background-color:#2E3268;
+font-size:30px;
+font-family:Serif;
+font-weight:bold;
+cursor:pointer;
+}
+delete
+{
+cursor: pointer;
+font-weight: bold;
+color: #2E3268;
+float:right;
+}
+li
+{
+overflow:auto;
+}
+</style>
+</head>
+<body>
+<div>
+<ol id="list" type="1"></ol>
+<center>
+<button id= "buy" onclick="buy()" style="visibility:hidden;">Buy</button>
+</div>
+<center>
+<p id="empty" style="font-size:50px;">Your Cart is Empty!</p>
+</center>
+<script src="cart.js"></script>
+</body>
+</html>
